@@ -11,6 +11,9 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+        aside{
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -115,5 +118,65 @@
     <br>
     <input type="submit" name="submit">
    </form>
+   <!-- rowspan colspan -->
+   <table>
+       <thead>
+        <!-- colgroup tag ka use hum group of column ko style karne k liye use karte h  -->
+        <colgroup>
+        <col colspan="2" style="background-color: aqua;">
+        <col colspan="2" style="background-color: aquamarine;">
+        <col aria-colspan="1" style="visibility: collapse;"><!--isse column ko hum user se hide kar sakte h -->
+        </colgroup>
+<th rowspan="2">State of health</th>
+<th colspan="2">Eating value</th>
+<th>after eating</th>
+<tr>
+    <td>Minimum</td>
+    <td>maximum</td>
+    <td>2 hr after eating</td>
+</tr>
+    </thead>
+    <tbody>
+<tr>
+    <td>Heady</td>
+    <td>70</td>
+    <td>100</td>
+    <td>less than 140</td>
+</tr>
+<tr>
+    <td>pre</td>
+    <td>101</td>
+    <td>126</td>
+    <td>140 to 200</td>
+</tr>
+<tr>
+    <td>Dub</td>
+    <td>more than 126</td>
+    <td>NA</td>
+    <td>more than 200</td>
+</tr>
+    </tbody>
+   </table> <!--table k baare me comment karne k liye hum caption tag ka use karte h -->
+<!--HW rowgroup-->
+<!-- mail -->
+<aside>
+<a href="mailto:nishantrajhans50@gmail.com">Mail me</a><br>
+<!-- call -->
+<a href="tel:+918000769526">call me</a>
+</aside>
+<!-- bookmark isme h ki humko page k jis section me jana hota h uska link hum page k starting me laga dete h  -->
+<!--isme pehle hum jis section me jana chahte h uske id de denge fir jaha par wo link humko dalna h waha par ancher tag ka use karenge or usme hum uss id ko dalenge or jab hum uss link ko click karenge web page me to hum sidha uss section me scroll down ho jaenge par wo smooth nahi hoga issi liye humko style me html {}ye likh k iska scroll behaviour ko smooth karna hoga -->
+<!--Div ye jo h block element h or jo spam h wo inline element h block element me jo uske css k background coloue ki jo property h wo defaul poore line ko cover karne k liye set hui hoti h jabki inline me wo uss line tak hi hoti h -->
+<!-- senentic tag -->
+<!--<article></article>
+<aside></aside>
+<figure></figure>
+<figcaption></figcaption>
+<header></header>
+<footer></footer>
+<main></main>
+<nav></nav>
+aside tag humne upper use kiya h 
+hw: header and h1  and kya footer tag me header tag use kar sakte h and kya multiple header tag use kar sakte h and main tag or body tag me diff-->
 </body>
 </html>

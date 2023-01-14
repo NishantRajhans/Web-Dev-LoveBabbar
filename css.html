@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p{
+            background-color: rgb(94, 27, 139);
+        }
+        .para{
+            background-color: beige;
+            border: 1px solid black;
+        }
+        #one{
+            background-color: blue;
+            border: 1px solid black;
+        }
+        .psudo:hover{
+          color: blueviolet;
+          /*isme hum kissi bhi class element id ki special state me changes kar sakte h jese yaha special state h hover wese hi bahut sake hote h */
+        }
+        span,h2{
+            color: greenyellow;
+            /*isme humne do elemeent ka coloue wali property ko ek saath hi change kar diya h to ye multiple selector hota h */
+        }
+       #internal{
+            color: rgb(105, 71, 7);
+        }
+        .para-sf{
+            color: black !important;
+        }
+        #special{
+            color: blueviolet;
+        }
+        #dive{
+            color: rgb(18, 158, 104);
+            background-color: blueviolet;
+        }
+        .dive{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: brown;
+        }
+        .box{
+            width: 500px;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+<div> 
+    <p>Element selector</p><!--element selector jo h wo ek particular element ko select karne k liye h -->
+    <p>Element selector</p>
+</div>
+<div>
+    <p class="para">class Selectors</p> <!--jo class selector h wo group of element ko select karne k liye use karte h q ki class jo h wo unique nahi ho sakti h -->
+    <p class="para">class Selectors</p>
+    <p class="para">class Selectors</p>
+</div>
+<div>
+    <p id="one">Id selector</p><!--jo id selector h wo hum ek hi element ko select karne k liye use kar sakte h q ki jo id h wo unique hoti h  -->
+    <p id="two">Id selector</p>
+    <p id="three">Id selector</p>
+</div>
+<div>
+    <button class="psudo">psudo class </button>
+    <p class="psudo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum mollitia laboriosam dicta amet, sint quam neque ducimus quis et similique, voluptatibus dolorem vitae, delectus repudiandae ut hic. Perferendis, repellendus.</p><!--isme humne psudo class jo h wo use ki h -->
+</div>
+<div>
+    <span>Multiple selector</span>
+    <h2>Multiple selector</h2>
+</div>
+<div>How to add style in css
+    <p style="color: rgb(212, 19, 45);">hellow world</p><!--Inline css-->
+    <p id="internal">hellow world</p><!--internal CSS-->
+    <p id="external">hellow world</p><!--external CSS-->
+</div>
+<!--HW universal selector nested selector attribute selector-->
+<div class="specificity">
+    <p class="para-sf" id="special" style="color: aquamarine;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit mollitia laboriosam consequuntur, facere aliquam sequi accusamus et dolores, illum assumenda similique quam deserunt nam delectus officiis quos, animi cum qui.</p><!--jo specificity h wo pehle I important ki h fir inline css ki h fir id ki h or uske baad class ki h or last me element ki h-->
+</div>
+<div>
+    property clashing
+    <p class="divi" id="dive">kya haal h </p>
+</div>
+<div>Colours in CSS
+    <p style="color: #000;">Hexadecimal<!--iske aandar jo colour hote h wo hexa decimal me define hotr h #RRGGBB--></p>
+    <p style="color:rgba(18, 158, 104, 0.5)">RGB<!--iske aandar jo colour hote h wo rgb me hote h jo isme 4 value h wo tranperancy ko dikhata h usko hum alpha value kehte h --></p>
+    <p style="color:blueviolet">Pre defined<!--iske aandar hum sirf colour ka naam likhte h  --></p>
+    <!--HW font-family font-weight font-style emphasise ans importance how to add external fonts-->
+    Unit In CSS
+    <div style="background-color: blanchedalmond;">
+        Absolute unit 
+        <ol>
+            <li>mm</li>
+            <li>cm</li>
+            <li>in</li>
+            <li>px</li><!--ye jo h wo 1/96 of inch hoti h ye CSS ki pixel hoti h jo device ki pixel h wo alag hoti h -->
+        </ol>
+        Percentage unit 
+        <div style="width: 50%;border: 1px solid black; background-color: blue;">hellow duniya</div><!--isme jo parent element hota uske hihab se 10% h-->
+        Relative Unit to Font size
+        <ol>
+            <li>em</li>parent tag
+            <li>rem</li>root tag
+        </ol>
+        Relative unit to viewport
+        <ol>
+            <li>vw</li><!--1/100 width of view port-->
+            <li>vh</li><!--1/100 hetght of view port-->
+        </ol>
+    </div>
+</div>
+<!--Hw difference between 1% and 1vw-->
+
+<div>
+    Box Model In CSS
+    <div class="box" id="yellow">A</div>
+    <div class="box" id="green">B</div>
+    <div class="box" id="blue">C</div>
+</div>
+
+</body>
+</html>

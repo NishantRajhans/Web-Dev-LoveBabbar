@@ -1,0 +1,37 @@
+.box{
+    border: 1px solid black;
+    height: 200px;;
+    width:150px;
+    background-image: linear-gradient(to left,green,blue);
+    background-image: linear-gradient(to bottom right,green,blue);
+    background-image: linear-gradient(orange,white,green);
+}
+.radial{
+    border: 1px solid black;
+    height: 200px;;
+    width:150px;
+    background-image: radial-gradient(green,blue);
+}
+.conical{
+    border: 1px solid black;
+    height: 200px;;
+    width:150px;
+    background-image: conic-gradient(green,blue,pink,black);
+}
+.shadow{
+    text-shadow: 2px 3px 3px greenyellow;
+    text-shadow: 2px 3px 3px greenyellow,4px 6px 3px rgb(22, 173, 135);
+    box-shadow: 5px 6px 3px rgba(184, 196, 17, 0.548);
+    box-shadow: -5px -6px 3px rgba(184, 196, 17, 0.548);
+}
+.maxheight{
+    max-height:200px;
+    border: 1px solid black;
+    overflow: scroll;
+    overflow: hidden;
+    overflow: auto;
+}
+.minheight{
+    min-height:200px;
+    border: 1px solid black;
+}
