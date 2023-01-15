@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: "poppins", "sans-serif";
 }
 .wrapper{
     height: 100vh;
@@ -32,6 +33,52 @@
     object-fit: cover;
 }
 .head{
-    color: rgb(93, 97, 99);
-font-size: 100px;
+    position: absolute;
+    top: 5rem;
+font-size: 10rem;
+letter-spacing: 4px;
+color:white;
+text-shadow: 0 0 10px rgb(0,0,0,0.3);
+}
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+.secheading{
+    font-size: 5rem;
+    padding:0 10rem;
+}
+.bg{
+    position: relative;
+    width: 100vw;
+    background-attachment: fixed;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.bg1{
+    background-image:url(https://codehelp-parallax-website.netlify.app/assets/sport-1.jpg);
+}
+.bg2{
+    background-image:url(https://codehelp-parallax-website.netlify.app/assets/sport-2.jpg);
+}
+.bg3{
+    background-image:url(https://codehelp-parallax-website.netlify.app/assets/sport-3.jpg);
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem,2.5rem;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.text{
+    font-size:1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
 }
