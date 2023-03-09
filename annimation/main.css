@@ -1,0 +1,75 @@
+.main{
+    width: 660px;
+    height: 150px;
+    background-color: aquamarine;
+}
+.box{
+    width: 260px;
+    height: 150px;
+    background-color: rgb(31, 150, 16);
+    position: relative;/*annimation ko move karne k liye humko position relative karni padegi*/
+    animation-name: nishant;/*annimation name h ye */
+    animation-duration: 3s;/*annimation kitne speed se chalega  */
+    animation-iteration-count: 2;/*annimation kitni der tak chalega */
+    animation-fill-mode: forwards;/*annimation kaha pe ja k rukega wo batat h forward me annimation aage ja k rukega jab uska count khatam ho jaega */
+    animation-timing-function: ease-in;/*annimation kese chalega wo batat h ease in me pehle ye dhire chalega or baad me tez ho jaega  */
+    animation-delay: 3s;
+    animation-direction: reverse;
+}
+.main2{
+    width: 660px;
+    height: 150px;
+    background-color: rgb(184, 111, 28);
+}
+.box2{
+    width: 260px;
+    height: 150px;
+    background-color: rgb(171, 190, 61);
+    position: relative;/*annimation ko move karne k liye humko position relative karni padegi*/
+    animation-name: nishant2;/*annimation name h ye */
+    animation-duration: 3s;/*annimation kitne speed se chalega  */
+    animation-iteration-count: 2;/*annimation kitni der tak chalega */
+    animation-fill-mode: forwards;/*annimation kaha pe ja k rukega wo batat h forward me annimation aage ja k rukega jab uska count khatam ho jaega */
+    animation-timing-function: ease-in;/*annimation kese chalega wo batat h ease in me pehle ye dhire chalega or baad me tez ho jaega  */
+    /* animation-delay: 3s; */
+    /* animation-direction: reverse; */
+}
+.box3{
+    width: 260px;
+    height: 150px;
+    background-color: rgb(235, 20, 110);
+    position: relative;/*annimation ko move karne k liye humko position relative karni padegi*/
+    transition: background-color;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+}
+.box3:hover{
+  background-color: blueviolet;
+}
+@keyframes nishant2{
+  0%{
+     top: 0px;
+     left: 0px;
+  }
+  25%{
+    top: 400px;
+    left: 0px;
+  }
+  75%{
+    top: 400px;
+     left: 260px;
+  }
+  100%{
+    top: 0px;
+    left: 260px;
+  }
+}
+@keyframes nishant{
+    from{
+     width: 260px;
+    }
+    to{
+        width: 550px;
+    }
+}

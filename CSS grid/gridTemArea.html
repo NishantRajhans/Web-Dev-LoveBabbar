@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'leftside leftside rightside rightside rightside'
+            'footer footer footer footer footer';
+            width: 100vw;
+            height: 100vh;
+        }
+        .box{
+            background-color: blueviolet;
+            padding: 10px 5px;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        #header{
+            grid-area: header;
+        }
+        #leftside{
+            grid-area: leftside;
+        }
+        #rightside{
+            grid-area: rightside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+        @media(max-width:300px)
+        {
+            .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'leftside leftside rightside rightside rightside'
+            'footer footer footer footer footer';
+        }
+        .box{
+            background-color: rgb(18, 156, 71);
+            padding: 10px 5px;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        }
+         @media((min-width:301px) and (max-width:500px))
+        {
+            .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'leftside leftside leftside leftside leftside'
+            ' rightside rightside rightside rightside rightside'
+            'footer footer footer footer footer';
+        }
+        .box{
+            background-color: rgb(18, 156, 71);
+            padding: 10px 5px;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        }
+         @media((min-width:501px) and (max-width:800px))
+        {
+            .container{
+            display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            ' rightside rightside rightside rightside rightside'
+            'leftside leftside leftside leftside leftside'
+            'footer footer footer footer footer';
+        }
+        .box{
+            background-color: rgb(17, 58, 172);
+            padding: 10px 5px;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        }
+        @media(min-width:801px)
+        {
+            .container{
+             display: grid;
+            grid-template-areas: 
+            'header header header header header'
+            'leftside leftside rightside rightside rightside'
+            'footer footer footer footer footer'; 
+        }
+        .box{
+            background-color: rgb(219, 223, 20);
+            padding: 10px 5px;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">HOME CONTENT FOOTER</div>
+        <div class="box" id="leftside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe at unde architecto aut nesciunt consequatur vero fugiat neque vitae quam quis facere veniam nulla optio, nemo nam repellendus aperiam quos? Sed quas facilis sit, delectus aliquid nostrum aliquam molestiae corporis dolores libero veritatis nisi veniam velit eius maxime ratione adipisci consequatur, perferendis fugiat, totam nihil. Dolor, ea laborum ipsum illum fugit minima aliquam enim. Doloribus iste saepe repellat odit aut sapiente obcaecati minus? Consequatur deleniti assumenda esse optio minus fugit, praesentium voluptas voluptatibus molestias possimus, quae repellendus odio adipisci sint accusamus at! Aut soluta odit delectus illum quo explicabo.</div>
+        <div class="box" id="rightside">this is grid Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sint, recusandae quasi omnis in amet veniam possimus incidunt doloremque nesciunt eaque asperiores tempore. Tenetur exercitationem ex mollitia quaerat ut corporis. Ab debitis iste, perferendis iure placeat autem harum nostrum modi, id voluptatibus nisi ipsam error culpa dolore accusamus quas voluptatum laboriosam amet repellat consequatur velit possimus ipsum! Debitis, minima possimus. Harum, assumenda. Natus, possimus ad assumenda neque velit quam aut ullam tempore voluptatem rem dolor veritatis illum nesciunt nostrum adipisci aliquid unde autem! Quis perferendis eaque enim maxime, nam aut! Fuga, magni fugit. Asperiores, harum! Atque minus alias molestias rem, ad dolorum laborum officia facere adipisci est corporis voluptatibus vero ab quos odit in placeat aut aperiam voluptates. Sequi veniam aspernatur asperiores ut, dicta, nemo, saepe cupiditate explicabo tempora debitis magnam maxime culpa. Officiis nisi consequatur tempore, repudiandae maiores harum, amet, possimus facere assumenda quasi accusantium qui dicta inventore! Eligendi laudantium deleniti iusto! Eligendi fuga qui perferendis pariatur, harum ad, autem molestias libero, consectetur dolores possimus molestiae totam maiores saepe. Itaque, nostrum eaque ab tenetur, illum modi molestiae optio iste maxime accusamus officiis veritatis soluta doloribus earum eveniet aperiam quas eius reiciendis officia! Dicta, fugit asperiores. Eveniet libero totam dolorem?</div>
+        <div class="box" id="footer">Copyright</div>
+
+    </div>
+</body>
+</html>

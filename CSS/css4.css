@@ -6,6 +6,10 @@
     grid-template-columns: 200px repeat(2,1fr);
     grid-template-rows: 30px 1fr 30px;
     /* grid-template-columns: 100px 200px; */
+    grid-template-areas: 
+    "hd"
+    "sub con"
+    "ft";
     gap: 5px;
 }
 .box{
@@ -24,21 +28,26 @@
     grid-row-start: 1;
     grid-row-end: 3;
 } */
-#box1{
+#hd{
    grid-column-start: 1;
    grid-column-end: 4;
+   grid-area: 0/0/1/4;
+   grid-area: hd;
 }
-#box2{
+#ft{
     grid-row-start: 2;
     grid-row-end: 4;
+    grid-area: ft;
 }
-#box3{
+#sub{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 4;
+    grid-area: sub;
 }
-#box4{
+#con{
     grid-column-start: 1;
    grid-column-end: 4;
+   grid-area:con;
 }

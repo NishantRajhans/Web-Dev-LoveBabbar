@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 300px 200px 100px;
+            grid-template-columns: 300px 200px auto;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 2rem;
+            /* grid-template-rows: 1fr 4fr 2fr; */
+            grid-auto-rows: 5fr;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        }
+        .box{
+            background-color: blueviolet;
+            padding: 10px 5px;
+            margin: 2px;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+        .box:first-child{
+            grid-row-start: 1;
+            grid-row-end: 4;
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-column: 1 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+        <div class="box">this is grid</div>
+    </div>
+</body>
+</html>

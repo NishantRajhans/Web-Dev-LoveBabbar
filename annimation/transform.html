@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            width: 500px;
+            height: 80vh;
+            background-color: rgb(190, 176, 95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: rgb(45, 161, 70);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            transition:all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+        .box:hover{
+            transform: rotate(90deg);/*annimation kese hoga kis tarike se hoga wo hum transition se define karenge or kya hoga uske liye hum transform ka use karte h */
+            transform: scale(2);
+            transform: skew(45deg);
+            transform: translateX(200px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            My Name Is Nishant
+        </div>
+    </div>
+</body>
+</html>
