@@ -1,0 +1,258 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.content{
+    margin: 0 auto 0 auto;
+}
+.firstcircle{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    animation: move-circle1 12s infinite;
+}
+@keyframes move-circle1 {
+    50%{
+        left:350px;
+        transform: scale(0.8);
+    }
+}
+.secondcircle{
+    width: 200px;
+    height: 200px;
+    border-radius:100%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    position: absolute;
+    top: 400px;
+    left: 850px;
+    animation-name:move-circle2;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+}
+@keyframes move-circle2 {
+    50%{
+        left:800px;
+        top:390px;
+        
+    }
+}
+.box{
+    width: 330px;
+    height: 370px;
+    background: #ffffff1a;
+    border-radius: 6px;
+    border: 1px solid rgb(100, 87, 87);
+    z-index:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+h2{
+    color: aliceblue;
+}
+.about{
+    color: aliceblue;
+}
+.buttons{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.button1{
+    color: aliceblue;
+    width: 48%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(136, 130, 130);
+    border-radius: 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button1:hover{
+    transition: all 0.5s;
+    background-color: rgba(197, 200, 202, 0.849);
+    color: black;
+}
+.icon1{
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+.button2{
+    color: aliceblue;
+    width: 48%;
+    height:40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid rgb(139, 133, 133);
+    border-radius: 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.button2:hover{
+    transition: all 0.5s;
+    background-color: rgba(197, 200, 202, 0.849);
+    color: black;
+}
+.boxcontent{
+    font-size: small;
+    cursor: pointer;
+    padding-top: 7px;
+}
+h3{
+    color: aliceblue;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 2px solid #ffffff59;
+    width: 500px;
+    scale: 0;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+  }
+  .modal-header {
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff88;
+  }
+  .modal-header div i {
+    font-size: 30px;
+  }
+  .close {
+    cursor: pointer;
+  }
+  .icon-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .icon {
+    border: 1px solid #ffffff88;
+    padding: 17px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 10px;
+    justify-content: center;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+    text-decoration: none;
+  }
+  .icon i {
+    font-size: 27px;
+  }
+  #facebook {
+    color: #1771e6;
+    border: 1px solid #1771e6;
+  }
+  #facebook:hover {
+    background-color: #1771e6;
+    color: #fff;
+  }
+  
+  #twitter {
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+  }
+  #twitter:hover {
+    background-color: #1c99e6;
+    color: #fff;
+  }
+  
+  #instagram {
+    color: #cb2770;
+    border: 1px solid #cb2770;
+  }
+  #instagram:hover {
+    background-color: #cb2770;
+    color: #fff;
+  }
+  
+  #whatsapp {
+    color: #2fe664;
+    border: 1px solid #2fe664;
+  }
+  #whatsapp:hover {
+    background-color: #2fe664;
+    color: #fff;
+  }
+  
+  #telegram {
+    color: #0081c2;
+    border: 1px solid #0081c2;
+  }
+  #telegram:hover {
+    background-color: #0081c2;
+    color: #fff;
+  }
+  
+  .active {
+    scale: 1;
+  }
+  .overlay {
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+  }
+  .overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  
