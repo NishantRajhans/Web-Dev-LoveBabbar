@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono",monospace;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+.wrapperdark{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(17, 54, 87);
+}
+.heading{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.headingname{
+    font-size:35px;
+    font-weight: 700;
+}
+.dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.search{
+    background-color: aliceblue;
+    width: 50%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 80px 4px rgb(187, 185, 185);
+}
+.searchdark{
+    background-color: rgb(9, 29, 83);
+    box-shadow: 4px 4px 80px 4px rgb(82, 131, 177);
+}
+.searchicon{
+    width: 20px;
+    height: 20px;
+}
+.searchprofile{
+    background: none;
+    background-color: aliceblue;
+    border: none;
+    all:unset;
+    width:400px;
+}
+.searchprofile::placeholder{
+    font-size: 17px;
+    font-weight: 400;
+}
+.searchprofiledark{
+    background-color: rgb(9, 29, 83);
+}
+.noresult{
+    opacity:0;
+    margin-left: 70px;
+}
+.noresultdark{
+    color:aliceblue;
+}
+.active{
+    opacity: 1;
+}
+.leftside{
+    padding: 10px;
+    display: flex;
+    justify-content: baseline;
+    gap: 5px;
+}
+.rightside{
+    padding: 4px;
+}
+.searchbutton{
+    background-color: rgb(175, 192, 81);
+    color: aliceblue;
+    border: none;
+    width: 85px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.searchbuttondark{
+    background-color: rgb(62, 35, 161);
+}
+.searchbuttondark:hover{
+    transition: all 2s;
+    background-color: rgb(73, 56, 136);
+}
+.searchbutton:hover{
+    background-color: rgb(209, 221, 141);
+    transition: all 0.2s ease-in-out;
+}
+.profileinfo{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    background-color: aliceblue;
+    margin-top: 25px;
+    border-radius: 6px;
+    box-shadow: 4px 4px 80px 4px rgb(187, 185, 185);
+}
+.profileinfodark{
+    background-color: rgb(9, 29, 83);
+    box-shadow: 4px 4px 80px 4px rgb(82, 131, 177);
+}
+.profileimage{
+    padding-left: 23px;
+    padding-top: 23px;
+}
+.image{
+    height: 110px;
+    border-radius: 50%;
+}
+.profileright{
+    width: 100%;
+    padding-left: 23px;
+    padding-top: 23px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+}
+.name{
+    font-size: 25px;
+    font-weight: 700;
+}
+.joining{
+    font-weight: 600;
+}
+.userinfo{
+    height: 110px;
+    width: 90%;
+}
+.repoinfo{
+    background-color: rgba(204, 202, 202, 0.308);
+    height: 65px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 4px;
+}
+.text{
+    font-size:20px;
+     font-weight: 500;
+}
+.socialmedia{
+    height: 97px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+}
+.social-leftside{
+    width: 40%;
+}
+.social-rightside{
+    width: 40%;
+}
+.location-image,.tweeter-image,.link-image,.permission-image{
+    width: 20px;
+    height: 20px;
+}
+.location,.tweeter,.link,.permission{
+    margin: 5px;
+}
